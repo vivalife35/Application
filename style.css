@@ -139,4 +139,27 @@
 .navbar-nav .nav-link:hover {
     color: #07d269 !important;
 }
+.services {
+    margin-top: 30px;
+}
+
+.services h3 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.services ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.services li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.services li strong {
+    color: #0073e6; /* Color for the service title */
+}
 
