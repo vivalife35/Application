@@ -29,3 +29,15 @@ function updateProgress(goal, actual, progressElementId, trackerName) {
       updateProgress(waterData.goal, waterData.actual, 'waterProgressMessage', 'Water Intake');
     }
   });
+
+  document.getElementById('walkingForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const actualSteps = parseInt(document.getElementById('walkingActual').value);
+    if (isNaN(actualSteps) || actualSteps < 0) {
+      alert('Please enter a valid number for your actual walking steps.');
+    } else {
+      walkingData.actual = actualSteps;
+      updateProgress(walkingData.goal, walkingData.actual, 'walkingProgressMessage', 'Walking');
+    }
+  });
+
