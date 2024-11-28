@@ -101,8 +101,7 @@
             </div>
   
          
-            
-          <div class="col">
+        <div class="col">
             <div class="card" style="width: 18rem;">
                 <img src="/image/walking.gif" class="card-img-top" alt="Walking Image">
               <div class="card-body">
@@ -112,6 +111,23 @@
               </div>
             </div>
         
+            <div class="form-container">
+                <form id="walkingForm">
+                  <div class="mb-3">
+                    <label for="walkingGoal" class="form-label">Walking Goal (steps)</label>
+                    <input type="number" class="form-control" id="walkingGoal" value="10000" readonly>
+                  </div>
+                  <div class="mb-3">
+                    <label for="walkingActual" class="form-label">Actual Walking Steps</label>
+                    <input type="number" class="form-control" id="walkingActual" placeholder="Enter your actual walking steps">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Update Progress</button>
+                </form>
+                <div id="walkingProgressMessage" class="mt-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
     
 
     </body>
