@@ -83,6 +83,23 @@
                 <canvas id="waterChart"></canvas>
               </div>
             </div>
+
+            <div class="form-container">
+                <form id="waterForm">
+                  <div class="mb-3">
+                    <label for="waterGoal" class="form-label">Water Intake Goal (ml)</label>
+                    <input type="number" class="form-control" id="waterGoal" value="2000" readonly>
+                  </div>
+                  <div class="mb-3">
+                    <label for="waterActual" class="form-label">Actual Water Intake (ml)</label>
+                    <input type="number" class="form-control" id="waterActual" placeholder="Enter your actual water intake in ml">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Update Progress</button>
+                </form>
+                <div id="waterProgressMessage" class="mt-3"></div>
+              </div>
+            </div>
+  
          
             
           <div class="col">
