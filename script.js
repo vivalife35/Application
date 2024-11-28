@@ -18,3 +18,14 @@ function updateProgress(goal, actual, progressElementId, trackerName) {
       updateProgress(sleepData.goal, sleepData.actual, 'sleepProgressMessage', 'Sleep');
     }
   });
+
+  document.getElementById('waterForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const actualWater = parseFloat(document.getElementById('waterActual').value);
+    if (isNaN(actualWater) || actualWater < 0) {
+      alert('Please enter a valid number for your actual water intake.');
+    } else {
+      waterData.actual = actualWater;
+      updateProgress(waterData.goal, waterData.actual, 'waterProgressMessage', 'Water Intake');
+    }
+  });
