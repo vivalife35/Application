@@ -7,3 +7,14 @@ function updateProgress(goal, actual, progressElementId, trackerName) {
     const progressMessage = `You have completed ${Math.round(percentage)}% of your ${trackerName} goal. Keep it up!`;
     document.getElementById(progressElementId).textContent = progressMessage;
   }
+
+  document.getElementById('sleepForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const actualSleep = parseFloat(document.getElementById('sleepActual').value);
+    if (isNaN(actualSleep) || actualSleep < 0) {
+      alert('Please enter a valid number for your actual sleep.');
+    } else {
+      sleepData.actual = actualSleep;
+      updateProgress(sleepData.goal, sleepData.actual, 'sleepProgressMessage', 'Sleep');
+    }
+  });
