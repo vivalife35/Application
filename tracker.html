@@ -163,91 +163,85 @@
             </div>
         </div>
     </nav>
-    
     <div class="container text-center">
-        <div class="row">
-          
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="image/sleep.gif" class="card-img-top" alt="Sleep Image">
-              <div class="card-body">
-                <h5 class="card-title">Sleep Tracker</h5>
-                <p class="card-text">Track your sleep hours for today.</p>
-                <canvas id="sleepChart"></canvas>
-              </div>
-            </div>
-
-            <div class="form-container">
-                <form id="sleepForm">
-                  <div class="mb-3">
-                    <label for="sleepGoal" class="form-label">Sleep Goal (hours)</label>
-                    <input type="number" class="form-control" id="sleepGoal" value="8" readonly>
-                  </div>
-                  <div class="mb-3">
-                    <label for="sleepActual" class="form-label">Actual Sleep (hours)</label>
-                    <input type="number" class="form-control" id="sleepActual" placeholder="Enter your actual sleep hours">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Update Progress</button>
-                </form>
-                <div id="sleepProgressMessage" class="mt-3"></div>
-              </div>
-            </div>
-  
-            
-         <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="image/water.gif" class="card-img-top" alt="Water Image">
-              <div class="card-body">
-                <h5 class="card-title">Water Intake Tracker</h5>
-                <p class="card-text">Track your water intake for today.</p>
-                <canvas id="waterChart"></canvas>
-              </div>
-            </div>
-
-            <div class="form-container">
-                <form id="waterForm">
-                  <div class="mb-3">
-                    <label for="waterGoal" class="form-label">Water Intake Goal (ml)</label>
-                    <input type="number" class="form-control" id="waterGoal" value="2000" readonly>
-                  </div>
-                  <div class="mb-3">
-                    <label for="waterActual" class="form-label">Actual Water Intake (ml)</label>
-                    <input type="number" class="form-control" id="waterActual" placeholder="Enter your actual water intake in ml">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Update Progress</button>
-                </form>
-                <div id="waterProgressMessage" class="mt-3"></div>
-              </div>
-            </div>
-  
-         
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="image/walking.gif" class="card-img-top" alt="Walking Image">
-              <div class="card-body">
-                <h5 class="card-title">Walking Tracker</h5>
-                <p class="card-text">Track your walking goal for today.</p>
-                <canvas id="walkingChart"></canvas>
-              </div>
-            </div>
+      <div class="row">
         
-            <div class="form-container">
-                <form id="walkingForm">
-                  <div class="mb-3">
-                    <label for="walkingGoal" class="form-label">Walking Goal (steps)</label>
-                    <input type="number" class="form-control" id="walkingGoal" value="10000" readonly>
+          <div class="col">
+              <div class="card" style="width: 18rem;">
+                  <img src="image/sleep.gif" class="card-img-top" alt="Sleep Image">
+                  <div class="card-body">
+                      <h5 class="card-title">Sleep Tracker</h5>
+                      <p class="card-text">Track your sleep hours for today.</p>
                   </div>
-                  <div class="mb-3">
-                    <label for="walkingActual" class="form-label">Actual Walking Steps</label>
-                    <input type="number" class="form-control" id="walkingActual" placeholder="Enter your actual walking steps">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Update Progress</button>
-                </form>
-                <div id="walkingProgressMessage" class="mt-3"></div>
               </div>
-            </div>
+
+              <div class="form-container">
+                  <form id="sleepForm">
+                      <div class="mb-3">
+                          <label for="sleepGoal" class="form-label">Sleep Goal (hours)</label>
+                          <input type="number" class="form-control" id="sleepGoal" value="8" readonly>
+                      </div>
+                      <div class="mb-3">
+                          <label for="sleepActual" class="form-label">Actual Sleep (hours)</label>
+                          <input type="number" class="form-control" id="sleepActual" placeholder="Enter your actual sleep hours">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Update Progress</button>
+                  </form>
+                  <div id="sleepProgressMessage" class="mt-3"></div>
+              </div>
           </div>
-        </div>
+
+          <div class="col">
+              <div class="card" style="width: 18rem;">
+                  <img src="image/water.gif" class="card-img-top" alt="Water Image">
+                  <div class="card-body">
+                      <h5 class="card-title">Water Intake Tracker</h5>
+                      <p class="card-text">Track your water intake for today.</p>
+                  </div>
+              </div>
+
+              <div class="form-container">
+                  <form id="waterForm">
+                      <div class="mb-3">
+                          <label for="waterGoal" class="form-label">Water Intake Goal (ml)</label>
+                          <input type="number" class="form-control" id="waterGoal" value="2000" readonly>
+                      </div>
+                      <div class="mb-3">
+                          <label for="waterActual" class="form-label">Actual Water Intake (ml)</label>
+                          <input type="number" class="form-control" id="waterActual" placeholder="Enter your actual water intake in ml">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Update Progress</button>
+                  </form>
+                  <div id="waterProgressMessage" class="mt-3"></div>
+              </div>
+          </div>
+
+          <div class="col">
+              <div class="card" style="width: 18rem;">
+                  <img src="image/walking.gif" class="card-img-top" alt="Walking Image">
+                  <div class="card-body">
+                      <h5 class="card-title">Walking Tracker</h5>
+                      <p class="card-text">Track your walking goal for today.</p>
+                  </div>
+              </div>
+          
+              <div class="form-container">
+                  <form id="walkingForm">
+                      <div class="mb-3">
+                          <label for="walkingGoal" class="form-label">Walking Goal (steps)</label>
+                          <input type="number" class="form-control" id="walkingGoal" value="10000" readonly>
+                      </div>
+                      <div class="mb-3">
+                          <label for="walkingActual" class="form-label">Actual Walking Steps</label>
+                          <input type="number" class="form-control" id="walkingActual" placeholder="Enter your actual walking steps">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Update Progress</button>
+                  </form>
+                  <div id="walkingProgressMessage" class="mt-3"></div>
+              </div>
+          </div>
+      </div>
+  </div>
 
         <footer class="footer">
             <div class="footer-content">
